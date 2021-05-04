@@ -1,5 +1,6 @@
-('C:\\Users\\user\\Desktop\\Estudio\\PROGRAMACION\\PYTHON\\Record U '
- 'Seen\\build\\Record U Seen\\PKG-00.pkg',
+('C:\\Users\\user\\Desktop\\Cosas De '
+ 'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen\\build\\Record U '
+ 'Seen\\PKG-00.pkg',
  {'BINARY': 1,
   'DATA': 1,
   'EXECUTABLE': 1,
@@ -8,8 +9,9 @@
   'PYSOURCE': 1,
   'PYZ': 0},
  [('PYZ-00.pyz',
-   'C:\\Users\\user\\Desktop\\Estudio\\PROGRAMACION\\PYTHON\\Record U '
-   'Seen\\build\\Record U Seen\\PYZ-00.pyz',
+   'C:\\Users\\user\\Desktop\\Cosas De '
+   'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen\\build\\Record U '
+   'Seen\\PYZ-00.pyz',
    'PYZ'),
   ('struct',
    'c:\\users\\user\\appdata\\local\\programs\\python\\python38-32\\lib\\struct.pyo',
@@ -30,8 +32,8 @@
    'C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38-32\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
    'PYSOURCE'),
   ('Record U Seen',
-   'C:\\Users\\user\\Desktop\\Estudio\\PROGRAMACION\\PYTHON\\Record U '
-   'Seen\\Record U Seen.py',
+   'C:\\Users\\user\\Desktop\\Cosas De '
+   'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen\\Record U Seen.py',
    'PYSOURCE'),
   ('python38.dll',
    'c:\\users\\user\\appdata\\local\\programs\\python\\python38-32\\python38.dll',
@@ -91,12 +93,14 @@
    'c:\\users\\user\\appdata\\local\\programs\\python\\python38-32\\DLLs\\libffi-7.dll',
    'BINARY'),
   ('base_library.zip',
-   'C:\\Users\\user\\Desktop\\Estudio\\PROGRAMACION\\PYTHON\\Record U '
-   'Seen\\build\\Record U Seen\\base_library.zip',
+   'C:\\Users\\user\\Desktop\\Cosas De '
+   'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen\\build\\Record U '
+   'Seen\\base_library.zip',
    'DATA'),
   ('Record U Seen.exe.manifest',
-   'C:\\Users\\user\\Desktop\\Estudio\\PROGRAMACION\\PYTHON\\Record U '
-   'Seen\\build\\Record U Seen\\Record U Seen.exe.manifest',
+   'C:\\Users\\user\\Desktop\\Cosas De '
+   'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen\\build\\Record U '
+   'Seen\\Record U Seen.exe.manifest',
    'BINARY'),
   ('pyi-windows-manifest-filename Record U Seen.exe.manifest', '', 'OPTION')],
  False,

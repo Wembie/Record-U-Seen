@@ -1,7 +1,9 @@
-(['C:\\Users\\user\\Desktop\\Estudio\\PROGRAMACION\\PYTHON\\Record U '
-  'Seen\\Record U Seen.py'],
- ['C:\\Users\\user\\Desktop\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen',
-  'C:\\Users\\user\\Desktop\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen'],
+(['C:\\Users\\user\\Desktop\\Cosas De '
+  'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen\\Record U Seen.py'],
+ ['C:\\Users\\user\\Desktop\\Cosas De '
+  'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen',
+  'C:\\Users\\user\\Desktop\\Cosas De '
+  'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen'],
  ['codecs'],
  ['c:\\users\\user\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\stdhooks',
   'c:\\users\\user\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\stdhooks\\__pycache__',
@@ -19,8 +21,8 @@
    'C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38-32\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
    'PYSOURCE'),
   ('Record U Seen',
-   'C:\\Users\\user\\Desktop\\Estudio\\PROGRAMACION\\PYTHON\\Record U '
-   'Seen\\Record U Seen.py',
+   'C:\\Users\\user\\Desktop\\Cosas De '
+   'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen\\Record U Seen.py',
    'PYSOURCE')],
  [('multiprocessing.popen_spawn_posix',
    'c:\\users\\user\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\popen_spawn_posix.py',
@@ -631,29 +633,41 @@
   ('multiprocessing',
    'c:\\users\\user\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\__init__.py',
    'PYMODULE'),
-  ('stringprep',
-   'c:\\users\\user\\appdata\\local\\programs\\python\\python38-32\\lib\\stringprep.py',
-   'PYMODULE'),
   ('_py_abc',
    'c:\\users\\user\\appdata\\local\\programs\\python\\python38-32\\lib\\_py_abc.py',
    'PYMODULE'),
   ('tracemalloc',
    'c:\\users\\user\\appdata\\local\\programs\\python\\python38-32\\lib\\tracemalloc.py',
    'PYMODULE'),
+  ('stringprep',
+   'c:\\users\\user\\appdata\\local\\programs\\python\\python38-32\\lib\\stringprep.py',
+   'PYMODULE'),
   ('os',
    'c:\\users\\user\\appdata\\local\\programs\\python\\python38-32\\lib\\os.py',
    'PYMODULE'),
-  ('Packages.Funciones',
-   'C:\\Users\\user\\Desktop\\Estudio\\PROGRAMACION\\PYTHON\\Record U '
-   'Seen\\Packages\\Funciones.py',
+  ('Packages.Peliculas',
+   'C:\\Users\\user\\Desktop\\Cosas De '
+   'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen\\Packages\\Peliculas.py',
    'PYMODULE'),
   ('Packages',
-   'C:\\Users\\user\\Desktop\\Estudio\\PROGRAMACION\\PYTHON\\Record U '
-   'Seen\\Packages\\__init__.py',
+   'C:\\Users\\user\\Desktop\\Cosas De '
+   'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen\\Packages\\__init__.py',
+   'PYMODULE'),
+  ('Packages.Series',
+   'C:\\Users\\user\\Desktop\\Cosas De '
+   'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen\\Packages\\Series.py',
+   'PYMODULE'),
+  ('Packages.Animes',
+   'C:\\Users\\user\\Desktop\\Cosas De '
+   'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen\\Packages\\Animes.py',
+   'PYMODULE'),
+  ('Packages.Funciones',
+   'C:\\Users\\user\\Desktop\\Cosas De '
+   'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen\\Packages\\Funciones.py',
    'PYMODULE'),
   ('Packages.Menus',
-   'C:\\Users\\user\\Desktop\\Estudio\\PROGRAMACION\\PYTHON\\Record U '
-   'Seen\\Packages\\Menus.py',
+   'C:\\Users\\user\\Desktop\\Cosas De '
+   'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen\\Packages\\Menus.py',
    'PYMODULE')],
  [('python38.dll',
    'c:\\users\\user\\appdata\\local\\programs\\python\\python38-32\\python38.dll',
@@ -715,7 +729,8 @@
  [],
  [],
  [('base_library.zip',
-   'C:\\Users\\user\\Desktop\\Estudio\\PROGRAMACION\\PYTHON\\Record U '
-   'Seen\\build\\Record U Seen\\base_library.zip',
+   'C:\\Users\\user\\Desktop\\Cosas De '
+   'Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen\\build\\Record U '
+   'Seen\\base_library.zip',
    'DATA')],
  [])

@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['Record U Seen.py'],
-             pathex=['C:\\Users\\user\\Desktop\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen'],
+             pathex=['C:\\Users\\user\\Desktop\\Cosas De Webi\\Estudio\\PROGRAMACION\\PYTHON\\Record U Seen'],
              binaries=[],
              datas=[],
              hiddenimports=[],
