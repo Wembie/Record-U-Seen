@@ -21,8 +21,10 @@ def animes( contenidoAnimes, codigosAnimes ):
                     print( f"\nYa has agregado el anime con nombre { nombre }" )
                 else:
                     break
-            #print( f"Si { nombre } no tiene nombre alternativo coloca 'N\A'\n" )
-            #nombreAlternativo = input( f"Digita los nombres alternativos separados por ',' de { nombre }:" )
+            print( f"\nSi { nombre } no tiene nombre alternativo coloca 'No'\n" )
+            nombresAlternativos = input( f"───> Digita los nombres alternativos separados por ',' de { nombre }: " )
+            if nombresAlternativos.lower() == "no":
+                nombresAlternativos = "N\A"
             capitulos = preguntarNumeroNormal( f"Cuantos capitulos tiene { nombre }?", 0 )
             while True:
                 capitulosVistos = preguntarNumeroNormal( f"Cuantos capitulos has visto de { capitulos } cuyo nombre es { nombre }?", 2 )
@@ -71,7 +73,7 @@ def animes( contenidoAnimes, codigosAnimes ):
             listaAnime.append( año ) #5
             listaAnime.append( codigo ) #6
             listaAnime.append( capitulosVistos ) #7
-            #listaAnime.append( nombresAlternativos ) #8
+            listaAnime.append( nombresAlternativos ) #8
             #listaAnime.append( estudio ) #9
             contenidoAnimes.append( listaAnime )
             print( f"\nEl anime con nombre { nombre } ha sido agregado con exito!" )
@@ -82,8 +84,9 @@ def animes( contenidoAnimes, codigosAnimes ):
         nombreParaBuscar = input( "───> Digite el nombre a buscar: " )
         print( f"\nAnimes con la palabra { nombreParaBuscar }:\n" )
         for i in range( len( contenidoAnimes ) ):
-            if contenidoAnimes[ i ][ 0 ].find( nombreParaBuscar ) != -1:
+            if contenidoAnimes[ i ][ 0 ].lower().find( nombreParaBuscar.lower() ) != -1 or contenidoAnimes[ i ][ 8 ].lower().find( nombreParaBuscar.lower() ) != -1 :
                 print( f"""Nombre: { contenidoAnimes[ i ][ 0 ] }
+ Nombre Alternativo: { contenidoAnimes[ i ][ 8 ]}
  Capitulos: { contenidoAnimes[ i ][ 7 ] } / { contenidoAnimes[ i ][ 1 ] }
  Calificacion: { contenidoAnimes[ i ][ 2 ] }
  Estado: { contenidoAnimes[ i ][ 3 ] }""" )
@@ -169,6 +172,7 @@ def animes( contenidoAnimes, codigosAnimes ):
                         contenidoGenerosAnimes.append(generosParaBuscar[w])
                 if generosParaBuscar == contenidoGenerosAnimes:
                     print(f"""Nombre: {contenidoAnimes[i][0]}
+ Nombre Alternativo: { contenidoAnimes[ i ][ 8 ]}
  Capitulos: {contenidoAnimes[i][7]} / {contenidoAnimes[i][1]}
  Calificacion: {contenidoAnimes[i][2]}
  Estado: {contenidoAnimes[i][3]}""")
@@ -194,6 +198,7 @@ def animes( contenidoAnimes, codigosAnimes ):
         for i in range(len(contenidoAnimes)):
             if contenidoAnimes[i][2] >= calificacionParaBuscar:
                 print(f"""Nombre: {contenidoAnimes[i][0]}
+ Nombre Alternativo: { contenidoAnimes[ i ][ 8 ]}
  Capitulos: {contenidoAnimes[i][7]} / {contenidoAnimes[i][1]}
  Calificacion: {contenidoAnimes[i][2]}
  Estado: {contenidoAnimes[i][3]}""")
@@ -226,6 +231,7 @@ def animes( contenidoAnimes, codigosAnimes ):
         for i in range(len(contenidoAnimes)):
             if estado == contenidoAnimes[i][3]:
                 print(f"""Nombre: {contenidoAnimes[i][0]}
+ Nombre Alternativo: { contenidoAnimes[ i ][ 8 ]}
  Capitulos: {contenidoAnimes[i][7]} / {contenidoAnimes[i][1]}
  Calificacion: {contenidoAnimes[i][2]}
  Estado: {contenidoAnimes[i][3]}""")
@@ -248,6 +254,7 @@ def animes( contenidoAnimes, codigosAnimes ):
         for i in range(len(contenidoAnimes)):
             if año == contenidoAnimes[i][5]:
                 print(f"""Nombre: {contenidoAnimes[i][0]}
+ Nombre Alternativo: { contenidoAnimes[ i ][ 8 ]}
  Capitulos: {contenidoAnimes[i][7]} / {contenidoAnimes[i][1]}
  Calificacion: {contenidoAnimes[i][2]}
  Estado: {contenidoAnimes[i][3]}""")
@@ -273,6 +280,7 @@ def animes( contenidoAnimes, codigosAnimes ):
         for i in range(len(contenidoAnimes)):
             if capitulos == contenidoAnimes[i][1]:
                 print(f"""Nombre: {contenidoAnimes[i][0]}
+ Nombre Alternativo: { contenidoAnimes[ i ][ 8 ]}
  Capitulos: {contenidoAnimes[i][7]} / {contenidoAnimes[i][1]}
  Calificacion: {contenidoAnimes[i][2]}
  Estado: {contenidoAnimes[i][3]}""")
@@ -294,6 +302,7 @@ def animes( contenidoAnimes, codigosAnimes ):
         for i in range(len(contenidoAnimes)):
             if contenidoAnimes[i][7] == contenidoAnimes[i][1]:
                 print(f"""Nombre: {contenidoAnimes[i][0]}
+ Nombre Alternativo: { contenidoAnimes[ i ][ 8 ]}
  Capitulos: {contenidoAnimes[i][7]} / {contenidoAnimes[i][1]}
  Calificacion: {contenidoAnimes[i][2]}
  Estado: {contenidoAnimes[i][3]}""")
@@ -315,6 +324,7 @@ def animes( contenidoAnimes, codigosAnimes ):
         for i in range(len(contenidoAnimes)):
             if contenidoAnimes[i][7] != contenidoAnimes[i][1]:
                 print(f"""Nombre: {contenidoAnimes[i][0]}
+ Nombre Alternativo: { contenidoAnimes[ i ][ 8 ]}
  Capitulos: {contenidoAnimes[i][7]} / {contenidoAnimes[i][1]}
  Calificacion: {contenidoAnimes[i][2]}
  Estado: {contenidoAnimes[i][3]}""")
@@ -334,6 +344,7 @@ def animes( contenidoAnimes, codigosAnimes ):
         print("Animes que has visto:\n")
         for i in range(len(contenidoAnimes)):
             print(f"""Nombre: {contenidoAnimes[i][0]}
+ Nombre Alternativo: { contenidoAnimes[ i ][ 8 ]}
  Capitulos: {contenidoAnimes[i][7]} / {contenidoAnimes[i][1]}
  Calificacion: {contenidoAnimes[i][2]}
  Estado: {contenidoAnimes[i][3]}""")
@@ -365,6 +376,7 @@ def animes( contenidoAnimes, codigosAnimes ):
         while True:
             os.system('cls')
             print(f"""Nombre: {contenidoAnimes[codigoParaEditarAnime][0]}
+ Nombre Alternativo: { contenidoAnimes[ codigoParaEditarAnime ][ 8 ]}
  Capitulos: {contenidoAnimes[codigoParaEditarAnime][7]} / {contenidoAnimes[codigoParaEditarAnime][1]}
  Calificacion: {contenidoAnimes[codigoParaEditarAnime][2]}
  Estado: {contenidoAnimes[codigoParaEditarAnime][3]}""")
@@ -377,9 +389,10 @@ def animes( contenidoAnimes, codigosAnimes ):
             print(f"\n Año: {contenidoAnimes[codigoParaEditarAnime][5]}")
             print(f" Codigo: {contenidoAnimes[codigoParaEditarAnime][6]}\n")
             menuEditarAnime()
-            opcionMenuEditarAnime = preguntarNumero(0, 8, "[0,1,2,3,4,5,6,7,8]")
+            opcionMenuEditarAnime = preguntarNumero(0, 9, "[0,1,2,3,4,5,6,7,8,9]")
             os.system('cls')
             print(f"""Nombre: {contenidoAnimes[codigoParaEditarAnime][0]}
+ Nombre Alternativo: { contenidoAnimes[ codigoParaEditarAnime ][ 8 ]}
  Capitulos: {contenidoAnimes[codigoParaEditarAnime][7]} / {contenidoAnimes[codigoParaEditarAnime][1]}
  Calificacion: {contenidoAnimes[codigoParaEditarAnime][2]}
  Estado: {contenidoAnimes[codigoParaEditarAnime][3]}""")
@@ -397,10 +410,16 @@ def animes( contenidoAnimes, codigosAnimes ):
             if opcionMenuEditarAnime == 1: #Nombre
                 nombre = input(f"───> Digita nuevamente el nombre del anime: ")
                 contenidoAnimes[codigoParaEditarAnime][0] = nombre
-            if opcionMenuEditarAnime == 2: #Capitulos
+            if opcionMenuEditarAnime == 2: #Nombres Alternativos
+                print( f"Si { contenidoAnimes[codigoParaEditarAnime][0] } no tiene nombre alternativo coloca 'No'\n" )
+                nombresAlternativos = input( f"Digita los nombres alternativos separados por ',' de { contenidoAnimes[codigoParaEditarAnime][0] }: " )
+                if nombresAlternativos.lower() == "no":
+                    nombresAlternativos = "N\A"
+                contenidoAnimes[codigoParaEditarAnime][8] = nombresAlternativos
+            if opcionMenuEditarAnime == 3: #Capitulos
                 capitulos = preguntarNumeroNormal(f"Cuantos capitulos tiene nuevamente {contenidoAnimes[codigoParaEditarAnime][0]}?", 0)
                 contenidoAnimes[codigoParaEditarAnime][1] = capitulos
-            if opcionMenuEditarAnime == 3: #Capitulos Vistos
+            if opcionMenuEditarAnime == 4: #Capitulos Vistos
                 while True:
                     capitulosVistos = preguntarNumeroNormal(f"Cuantos capitulos has visto de {contenidoAnimes[codigoParaEditarAnime][1]} cuyo nombre es {contenidoAnimes[codigoParaEditarAnime][0]}?", 2)
                     if capitulosVistos >= 0:
@@ -411,15 +430,15 @@ def animes( contenidoAnimes, codigosAnimes ):
                     else:
                         print(f"\nLos capitulos vistos no pueden ser menor a 0\n")
                 contenidoAnimes[codigoParaEditarAnime][7] = capitulosVistos
-            if opcionMenuEditarAnime == 4: #Calificacion
+            if opcionMenuEditarAnime == 5: #Calificacion
                 while True:
                     calificacion = preguntarNumeroNormal(f"Digita nuevamente la calificacion de {contenidoAnimes[codigoParaEditarAnime][0]}", 1)
-                if calificacion <= 10:
-                    break
-                else:
-                    print("\nLa calificacion debe ser mayor a 0 y menor a 10\n")
+                    if calificacion <= 10:
+                        break
+                    else:
+                        print("\nLa calificacion debe ser mayor a 0 y menor a 10\n")
                 contenidoAnimes[codigoParaEditarAnime][2] = calificacion
-            if opcionMenuEditarAnime == 5: #Estado
+            if opcionMenuEditarAnime == 6: #Estado
                 while True:
                     estado = input(f"───> Digita nuevamente el estado de {contenidoAnimes[codigoParaEditarAnime][0]} [Emision = 1 / Finalizado = 0]: ")
                     if estado == "1":
@@ -432,7 +451,7 @@ def animes( contenidoAnimes, codigosAnimes ):
                         print("\nNumero invalido")
                         print("Por favor digitelo nuevamente\n")
                 contenidoAnimes[codigoParaEditarAnime][3] = estado
-            if opcionMenuEditarAnime == 6: #Generos
+            if opcionMenuEditarAnime == 7: #Generos
                 cuantosGenerosTiene = preguntarNumeroNormal(f"Cuantos generos tiene nuevamente {contenidoAnimes[codigoParaEditarAnime][0]}?", 0)
                 listaGeneros = []
                 for i in range(cuantosGenerosTiene):
@@ -440,10 +459,10 @@ def animes( contenidoAnimes, codigosAnimes ):
                     listaGeneros.append(generos)
                 listaGeneros.sort()
                 contenidoAnimes[codigoParaEditarAnime][4] = listaGeneros
-            if opcionMenuEditarAnime == 7: #Año
+            if opcionMenuEditarAnime == 8: #Año
                 año = preguntarNumeroNormal(f"En que año se estreno nuevamente {contenidoAnimes[codigoParaEditarAnime][0]}?", 0)
                 contenidoAnimes[codigoParaEditarAnime][5] = año
-            if opcionMenuEditarAnime == 8: #Todo
+            if opcionMenuEditarAnime == 9: #Todo
                 nombre = input(f"───> Digita nuevamente el nombre del anime: ")
                 contenidoAnimes[codigoParaEditarAnime][0] = nombre
                 capitulos = preguntarNumeroNormal(f"Cuantos capitulos tiene nuevamente {nombre}?", 0)

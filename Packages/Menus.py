@@ -35,13 +35,14 @@ def menuEditarAnime():
     print( """───> MENU EDITAR ANIME <───
 
 1. Editar Nombre
-2. Editar Capitulos
-3. Editar Capitulos Vistos
-4. Editar Calificacion
-5. Editar Estado
-6. Editar Generos
-7. Editar Año
-8. Editar Todo
+2. Editar Nombres Alternativos
+3. Editar Capitulos
+4. Editar Capitulos Vistos
+5. Editar Calificacion
+6. Editar Estado
+7. Editar Generos
+8. Editar Año
+9. Editar Todo
 0. Volver""" )
 
 def menuBuscarGeneroAnime():

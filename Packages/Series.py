@@ -255,13 +255,25 @@ def series(contenidoSeries, codigosSeries):
         if opcionMenuSeries == 1: #Agregar
             agregarSerie(contenidoSeries, codigosSeries)
         if opcionMenuSeries == 2: #Editar
-            editarSerie(contenidoSeries, codigosSeries)
+            if len(contenidoSeries) == 0:
+                print("No has colocado ninguna serie\n")
+            else:
+                editarSerie(contenidoSeries, codigosSeries)
         if opcionMenuSeries == 3: #Buscar x nombre
-            buscarSerieXNombre(contenidoSeries, codigosSeries)
+            if len(contenidoSeries) == 0:
+                print("No has colocado ninguna serie\n")
+            else:
+                buscarSerieXNombre(contenidoSeries, codigosSeries)
         if opcionMenuSeries == 4: #Buscar x genero
-            buscarSerieXGenero(contenidoSeries, codigosSeries)
+            if len(contenidoSeries) == 0:
+                print("No has colocado ninguna serie\n")
+            else:
+                buscarSerieXGenero(contenidoSeries, codigosSeries)
         if opcionMenuSeries == 5: #Borrar
-            borrarSerie(contenidoSeries, codigosSeries)
+            if len(contenidoSeries) == 0:
+                print("No has colocado ninguna serie\n")
+            else:
+                borrarSerie(contenidoSeries, codigosSeries)
         if opcionMenuSeries == 6: #Mostrar
             if len(contenidoSeries) == 0:
                 print("No has colocado ninguna serie\n")

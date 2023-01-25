@@ -245,7 +245,7 @@ def peliculas(contenidoPeliculas, codigosPeliculas):
         while posicionParaCambiarCodigos <= len(codigosPeliculas)-1:
             codigosPeliculas[posicionParaCambiarCodigos] -= 1
             posicionParaCambiarCodigos += 1
-    
+            
     while True:
         menuPeliculas()
         opcionMenuPeliculas = preguntarNumero(0, 6, "[0,1,2,3,4,5,6]")
@@ -253,15 +253,30 @@ def peliculas(contenidoPeliculas, codigosPeliculas):
         if opcionMenuPeliculas == 0: #Volver
             return
         if opcionMenuPeliculas == 1: #Agregar
-            agregarPelicula(contenidoPeliculas, codigosPeliculas)
+            if len(contenidoPeliculas) == 0:
+                print("No has colocado ninguna pelicula\n")
+            else:
+                agregarPelicula(contenidoPeliculas, codigosPeliculas)
         if opcionMenuPeliculas == 2: #Editar
-            editarPelicula(contenidoPeliculas, codigosPeliculas)
+            if len(contenidoPeliculas) == 0:
+                print("No has colocado ninguna pelicula\n")
+            else:
+                editarPelicula(contenidoPeliculas, codigosPeliculas)
         if opcionMenuPeliculas == 3: #Buscar x nombre
-            buscarPeliculaXNombre(contenidoPeliculas, codigosPeliculas)
+            if len(contenidoPeliculas) == 0:
+                print("No has colocado ninguna pelicula\n")
+            else:
+                buscarPeliculaXNombre(contenidoPeliculas, codigosPeliculas)
         if opcionMenuPeliculas == 4: #Buscar x genero
-            buscarPeliculaXGenero(contenidoPeliculas, codigosPeliculas)
+            if len(contenidoPeliculas) == 0:
+                print("No has colocado ninguna pelicula\n")
+            else:
+                buscarPeliculaXGenero(contenidoPeliculas, codigosPeliculas)
         if opcionMenuPeliculas == 5: #Borrar
-            borrarPelicula(contenidoPeliculas, codigosPeliculas)
+            if len(contenidoPeliculas) == 0:
+                print("No has colocado ninguna pelicula\n")
+            else:
+                borrarPelicula(contenidoPeliculas, codigosPeliculas)
         if opcionMenuPeliculas == 6: #Mostrar
             if len(contenidoPeliculas) == 0:
                 print("No has colocado ninguna pelicula\n")
